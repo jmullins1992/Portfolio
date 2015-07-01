@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfStateTaxInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <StateTaxInfo>
+    <StateAbbreviation>OH</StateAbbreviation>
+    <TaxRate>6.25</TaxRate>
+  </StateTaxInfo>
+  <StateTaxInfo>
+    <StateAbbreviation>PA</StateAbbreviation>
+    <TaxRate>6.75</TaxRate>
+  </StateTaxInfo>
+  <StateTaxInfo>
+    <StateAbbreviation>MI</StateAbbreviation>
+    <TaxRate>5.75</TaxRate>
+  </StateTaxInfo>
+  <StateTaxInfo>
+    <StateAbbreviation>IN</StateAbbreviation>
+    <TaxRate>6.00</TaxRate>
+  </StateTaxInfo>
+</ArrayOfStateTaxInfo>

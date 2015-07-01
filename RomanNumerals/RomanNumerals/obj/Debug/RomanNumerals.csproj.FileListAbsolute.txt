@@ -1,0 +1,9 @@
+c:\users\apprentice\documents\visual studio 2013\Projects\RomanNumerals\RomanNumerals\bin\Debug\RomanNumerals.exe.config
+c:\users\apprentice\documents\visual studio 2013\Projects\RomanNumerals\RomanNumerals\obj\Debug\RomanNumerals.csprojResolveAssemblyReference.cache
+c:\users\apprentice\documents\visual studio 2013\Projects\RomanNumerals\RomanNumerals\bin\Debug\RomanNumerals.exe
+c:\users\apprentice\documents\visual studio 2013\Projects\RomanNumerals\RomanNumerals\bin\Debug\RomanNumerals.pdb
+c:\users\apprentice\documents\visual studio 2013\Projects\RomanNumerals\RomanNumerals\obj\Debug\RomanNumerals.exe
+c:\users\apprentice\documents\visual studio 2013\Projects\RomanNumerals\RomanNumerals\obj\Debug\RomanNumerals.pdb
+C:\Github\JerryMullins\RomanNumerals\RomanNumerals\bin\Debug\RomanNumerals.exe.config
+C:\Github\JerryMullins\RomanNumerals\RomanNumerals\obj\Debug\RomanNumerals.exe
+C:\Github\JerryMullins\RomanNumerals\RomanNumerals\obj\Debug\RomanNumerals.pdb

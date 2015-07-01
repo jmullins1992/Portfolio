@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfProduct xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Product>
+    <ProductType>Carpet</ProductType>
+    <CostPerSquareFoot>2.25</CostPerSquareFoot>
+    <LaborCostPerSquareFoot>2.10</LaborCostPerSquareFoot>
+  </Product>
+  <Product>
+    <ProductType>Laminate</ProductType>
+    <CostPerSquareFoot>1.75</CostPerSquareFoot>
+    <LaborCostPerSquareFoot>2.10</LaborCostPerSquareFoot>
+  </Product>
+  <Product>
+    <ProductType>Tile</ProductType>
+    <CostPerSquareFoot>3.50</CostPerSquareFoot>
+    <LaborCostPerSquareFoot>4.15</LaborCostPerSquareFoot>
+  </Product>
+  <Product>
+    <ProductType>Wood</ProductType>
+    <CostPerSquareFoot>5.15</CostPerSquareFoot>
+    <LaborCostPerSquareFoot>4.75</LaborCostPerSquareFoot>
+  </Product>
+</ArrayOfProduct>

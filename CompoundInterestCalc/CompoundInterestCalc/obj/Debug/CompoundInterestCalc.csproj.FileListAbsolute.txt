@@ -1,0 +1,6 @@
+c:\users\apprentice\documents\visual studio 2013\Projects\CompoundInterestCalc\CompoundInterestCalc\bin\Debug\CompoundInterestCalc.exe.config
+c:\users\apprentice\documents\visual studio 2013\Projects\CompoundInterestCalc\CompoundInterestCalc\bin\Debug\CompoundInterestCalc.exe
+c:\users\apprentice\documents\visual studio 2013\Projects\CompoundInterestCalc\CompoundInterestCalc\bin\Debug\CompoundInterestCalc.pdb
+c:\users\apprentice\documents\visual studio 2013\Projects\CompoundInterestCalc\CompoundInterestCalc\obj\Debug\CompoundInterestCalc.csprojResolveAssemblyReference.cache
+c:\users\apprentice\documents\visual studio 2013\Projects\CompoundInterestCalc\CompoundInterestCalc\obj\Debug\CompoundInterestCalc.exe
+c:\users\apprentice\documents\visual studio 2013\Projects\CompoundInterestCalc\CompoundInterestCalc\obj\Debug\CompoundInterestCalc.pdb

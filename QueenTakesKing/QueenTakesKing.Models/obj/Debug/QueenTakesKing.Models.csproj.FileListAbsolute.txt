@@ -1,0 +1,5 @@
+c:\users\apprentice\documents\visual studio 2013\Projects\QueenTakesKing\QueenTakesKing.Models\bin\Debug\QueenTakesKing.Models.dll
+c:\users\apprentice\documents\visual studio 2013\Projects\QueenTakesKing\QueenTakesKing.Models\bin\Debug\QueenTakesKing.Models.pdb
+c:\users\apprentice\documents\visual studio 2013\Projects\QueenTakesKing\QueenTakesKing.Models\obj\Debug\QueenTakesKing.Models.csprojResolveAssemblyReference.cache
+c:\users\apprentice\documents\visual studio 2013\Projects\QueenTakesKing\QueenTakesKing.Models\obj\Debug\QueenTakesKing.Models.dll
+c:\users\apprentice\documents\visual studio 2013\Projects\QueenTakesKing\QueenTakesKing.Models\obj\Debug\QueenTakesKing.Models.pdb

@@ -1,0 +1,9 @@
+c:\users\apprentice\documents\visual studio 2013\Projects\CreditCardValidator\CreditCardValidator\bin\Debug\CreditCardValidator.exe.config
+c:\users\apprentice\documents\visual studio 2013\Projects\CreditCardValidator\CreditCardValidator\obj\Debug\CreditCardValidator.csprojResolveAssemblyReference.cache
+c:\users\apprentice\documents\visual studio 2013\Projects\CreditCardValidator\CreditCardValidator\bin\Debug\CreditCardValidator.exe
+c:\users\apprentice\documents\visual studio 2013\Projects\CreditCardValidator\CreditCardValidator\bin\Debug\CreditCardValidator.pdb
+c:\users\apprentice\documents\visual studio 2013\Projects\CreditCardValidator\CreditCardValidator\obj\Debug\CreditCardValidator.exe
+c:\users\apprentice\documents\visual studio 2013\Projects\CreditCardValidator\CreditCardValidator\obj\Debug\CreditCardValidator.pdb
+C:\Github\JerryMullins\CreditCardValidator\CreditCardValidator\bin\Debug\CreditCardValidator.exe.config
+C:\Github\JerryMullins\CreditCardValidator\CreditCardValidator\obj\Debug\CreditCardValidator.exe
+C:\Github\JerryMullins\CreditCardValidator\CreditCardValidator\obj\Debug\CreditCardValidator.pdb

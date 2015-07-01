@@ -1,0 +1,5 @@
+C:\Github\JerryMullins\FlooringMastery\Models\bin\Debug\Models.dll
+C:\Github\JerryMullins\FlooringMastery\Models\bin\Debug\Models.pdb
+C:\Github\JerryMullins\FlooringMastery\Models\obj\Debug\FlooringMastery.Models.csprojResolveAssemblyReference.cache
+C:\Github\JerryMullins\FlooringMastery\Models\obj\Debug\Models.dll
+C:\Github\JerryMullins\FlooringMastery\Models\obj\Debug\Models.pdb

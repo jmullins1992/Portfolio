@@ -1,0 +1,16 @@
+c:\users\apprentice\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\bin\Debug\TicTacToe.exe.config
+c:\users\apprentice\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\bin\Debug\TicTacToe.exe
+c:\users\apprentice\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\bin\Debug\TicTacToe.pdb
+c:\users\apprentice\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\bin\Debug\TicTacToe.BLL.dll
+c:\users\apprentice\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\bin\Debug\TicTacToe.BLL.pdb
+c:\users\apprentice\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\obj\Debug\TicTacToeUI.csprojResolveAssemblyReference.cache
+c:\users\apprentice\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\obj\Debug\TicTacToe.exe
+c:\users\apprentice\documents\visual studio 2013\Projects\TicTacToe\TicTacToe\obj\Debug\TicTacToe.pdb
+C:\Github\JerryMullins\TicTacToe\TicTacToe\bin\Debug\TicTacToe.exe.config
+C:\Github\JerryMullins\TicTacToe\TicTacToe\obj\Debug\TicTacToe.exe
+C:\Github\JerryMullins\TicTacToe\TicTacToe\obj\Debug\TicTacToe.pdb
+C:\Github\JerryMullins\TicTacToe\TicTacToe\bin\Debug\TicTacToe.exe
+C:\Github\JerryMullins\TicTacToe\TicTacToe\bin\Debug\TicTacToe.pdb
+C:\Github\JerryMullins\TicTacToe\TicTacToe\bin\Debug\TicTacToe.BLL.dll
+C:\Github\JerryMullins\TicTacToe\TicTacToe\bin\Debug\TicTacToe.BLL.pdb
+C:\Github\JerryMullins\TicTacToe\TicTacToe\obj\Debug\TicTacToeUI.csprojResolveAssemblyReference.cache

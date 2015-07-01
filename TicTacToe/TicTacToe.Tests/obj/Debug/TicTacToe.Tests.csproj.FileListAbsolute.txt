@@ -1,0 +1,9 @@
+c:\users\apprentice\documents\visual studio 2013\Projects\TicTacToe\TicTacToe.Tests\bin\Debug\TicTacToe.Tests.dll
+c:\users\apprentice\documents\visual studio 2013\Projects\TicTacToe\TicTacToe.Tests\bin\Debug\TicTacToe.Tests.pdb
+c:\users\apprentice\documents\visual studio 2013\Projects\TicTacToe\TicTacToe.Tests\bin\Debug\nunit.framework.dll
+c:\users\apprentice\documents\visual studio 2013\Projects\TicTacToe\TicTacToe.Tests\bin\Debug\TicTacToe.BLL.dll
+c:\users\apprentice\documents\visual studio 2013\Projects\TicTacToe\TicTacToe.Tests\bin\Debug\TicTacToe.BLL.pdb
+c:\users\apprentice\documents\visual studio 2013\Projects\TicTacToe\TicTacToe.Tests\bin\Debug\nunit.framework.xml
+c:\users\apprentice\documents\visual studio 2013\Projects\TicTacToe\TicTacToe.Tests\obj\Debug\TicTacToe.Tests.csprojResolveAssemblyReference.cache
+c:\users\apprentice\documents\visual studio 2013\Projects\TicTacToe\TicTacToe.Tests\obj\Debug\TicTacToe.Tests.dll
+c:\users\apprentice\documents\visual studio 2013\Projects\TicTacToe\TicTacToe.Tests\obj\Debug\TicTacToe.Tests.pdb

@@ -1,0 +1,10 @@
+c:\users\apprentice\documents\visual studio 2013\Projects\TicTacToe\TicTacToe.BLL\bin\Debug\TicTacToe.BLL.dll
+c:\users\apprentice\documents\visual studio 2013\Projects\TicTacToe\TicTacToe.BLL\bin\Debug\TicTacToe.BLL.pdb
+c:\users\apprentice\documents\visual studio 2013\Projects\TicTacToe\TicTacToe.BLL\obj\Debug\TicTacToe.BLL.csprojResolveAssemblyReference.cache
+c:\users\apprentice\documents\visual studio 2013\Projects\TicTacToe\TicTacToe.BLL\obj\Debug\TicTacToe.BLL.dll
+c:\users\apprentice\documents\visual studio 2013\Projects\TicTacToe\TicTacToe.BLL\obj\Debug\TicTacToe.BLL.pdb
+C:\Github\JerryMullins\TicTacToe\TicTacToe.BLL\bin\Debug\TicTacToe.BLL.dll
+C:\Github\JerryMullins\TicTacToe\TicTacToe.BLL\bin\Debug\TicTacToe.BLL.pdb
+C:\Github\JerryMullins\TicTacToe\TicTacToe.BLL\obj\Debug\TicTacToe.BLL.csprojResolveAssemblyReference.cache
+C:\Github\JerryMullins\TicTacToe\TicTacToe.BLL\obj\Debug\TicTacToe.BLL.dll
+C:\Github\JerryMullins\TicTacToe\TicTacToe.BLL\obj\Debug\TicTacToe.BLL.pdb

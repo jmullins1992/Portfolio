@@ -1,0 +1,11 @@
+C:\Github\JerryMullins\FlooringMastery\FlooringMastery.Data\bin\Debug\DataFiles\Products.txt
+C:\Github\JerryMullins\FlooringMastery\FlooringMastery.Data\bin\Debug\DataFiles\Products.xml
+C:\Github\JerryMullins\FlooringMastery\FlooringMastery.Data\bin\Debug\DataFiles\States.txt
+C:\Github\JerryMullins\FlooringMastery\FlooringMastery.Data\bin\Debug\DataFiles\States.xml
+C:\Github\JerryMullins\FlooringMastery\FlooringMastery.Data\bin\Debug\FlooringMastery.Data.dll
+C:\Github\JerryMullins\FlooringMastery\FlooringMastery.Data\bin\Debug\FlooringMastery.Data.pdb
+C:\Github\JerryMullins\FlooringMastery\FlooringMastery.Data\bin\Debug\Models.dll
+C:\Github\JerryMullins\FlooringMastery\FlooringMastery.Data\bin\Debug\Models.pdb
+C:\Github\JerryMullins\FlooringMastery\FlooringMastery.Data\obj\Debug\FlooringMastery.Data.csprojResolveAssemblyReference.cache
+C:\Github\JerryMullins\FlooringMastery\FlooringMastery.Data\obj\Debug\FlooringMastery.Data.dll
+C:\Github\JerryMullins\FlooringMastery\FlooringMastery.Data\obj\Debug\FlooringMastery.Data.pdb
