@@ -7,7 +7,7 @@ using QueenTakesKing.Models;
 
 namespace QueenTakesKing
 {
-    class Program
+    class Program //a simple program to see if the queen has the king in check
     {
         static void Main(string[] args)
         {
