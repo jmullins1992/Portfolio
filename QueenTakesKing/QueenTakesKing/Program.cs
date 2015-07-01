@@ -11,31 +11,37 @@ namespace QueenTakesKing
     {
         static void Main(string[] args)
         {
-            bool check = false;
-
-            Console.Write("Enter a the king's postion (e.g. a1): ");
-            var input = Console.ReadLine().ToLower();
-            var king = new Coordinate(input);
-
-            Console.Write("Enter the queen's position: ");
-            input = Console.ReadLine().ToLower();
-            var queen = new Coordinate(input);
-
-            if (queen.Abscissa == king.Abscissa || queen.Ordinate == king.Ordinate)
+            do
             {
-                check = true;
-            }
-            for (int n = -8; n<=8; n++)
-            {
-                if (queen.Abscissa + n == king.Abscissa && queen.Ordinate + n == king.Ordinate)
+                bool check = false;
+
+                Console.Write("Enter a the king's postion (e.g. a1): ");
+                var input = Console.ReadLine().ToLower();
+                if (input == "quit")
+                {
+                    break;
+                }
+                var king = new Coordinate(input);
+
+                Console.Write("Enter the queen's position: ");
+                input = Console.ReadLine().ToLower();
+                var queen = new Coordinate(input);
+
+                if (queen.Abscissa == king.Abscissa || queen.Ordinate == king.Ordinate)
                 {
                     check = true;
                 }
-            }
 
-            Console.WriteLine(check ? "Y" : "N");
+                if ((Math.Abs(queen.Abscissa - king.Abscissa) == (Math.Abs(queen.Ordinate - king.Ordinate))))
+                {
+                    check = true;
+                }
 
-            Console.ReadKey();
+
+                Console.WriteLine(check ? "Y" : "N");
+
+                Console.ReadKey();
+            } while (true);
         }
     }
 }

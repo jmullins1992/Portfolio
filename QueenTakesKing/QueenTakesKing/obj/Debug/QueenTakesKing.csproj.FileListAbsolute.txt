@@ -6,3 +6,11 @@ c:\users\apprentice\documents\visual studio 2013\Projects\QueenTakesKing\QueenTa
 c:\users\apprentice\documents\visual studio 2013\Projects\QueenTakesKing\QueenTakesKing\obj\Debug\QueenTakesKing.csprojResolveAssemblyReference.cache
 c:\users\apprentice\documents\visual studio 2013\Projects\QueenTakesKing\QueenTakesKing\obj\Debug\QueenTakesKing.exe
 c:\users\apprentice\documents\visual studio 2013\Projects\QueenTakesKing\QueenTakesKing\obj\Debug\QueenTakesKing.pdb
+C:\Github\Portfolio\QueenTakesKing\QueenTakesKing\bin\Debug\QueenTakesKing.exe.config
+C:\Github\Portfolio\QueenTakesKing\QueenTakesKing\obj\Debug\QueenTakesKing.exe
+C:\Github\Portfolio\QueenTakesKing\QueenTakesKing\obj\Debug\QueenTakesKing.pdb
+C:\Github\Portfolio\QueenTakesKing\QueenTakesKing\bin\Debug\QueenTakesKing.exe
+C:\Github\Portfolio\QueenTakesKing\QueenTakesKing\bin\Debug\QueenTakesKing.pdb
+C:\Github\Portfolio\QueenTakesKing\QueenTakesKing\bin\Debug\QueenTakesKing.Models.dll
+C:\Github\Portfolio\QueenTakesKing\QueenTakesKing\bin\Debug\QueenTakesKing.Models.pdb
+C:\Github\Portfolio\QueenTakesKing\QueenTakesKing\obj\Debug\QueenTakesKing.csprojResolveAssemblyReference.cache
