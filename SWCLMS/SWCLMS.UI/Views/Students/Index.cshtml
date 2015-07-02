@@ -1,0 +1,47 @@
+﻿@model SWCLMS.Models.Responses.DataResponse<List<SWCLMS.Models.Queries.GradedCourse>>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Student Dashboard</h2>
+
+<div class="row">
+    <div class="col-xs-12">
+        <h4>Classes</h4>
+    </div>
+
+    <div class="col-xs-12">
+        <div class="panel panel-default">
+            @if (Model.Data == null || Model.Data.Count == 0)
+            {
+                <div class="panel-body">
+                    <h4>You have not been enrolled in any classes yet.</h4>
+                </div>
+            }
+            else
+            {
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Course Name</th>
+                            <th>Grade</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var c in Model.Data)
+                        {
+                            <tr>
+                                <td>@c.CourseName</td>
+                                <td>@c.CurrentGrade</td>
+                                <td>@Html.ActionLink("View Grades", "Grades", "Students", new { id = c.CourseId }, null)</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+            
+        </div>
+        
+    </div>
+</div>

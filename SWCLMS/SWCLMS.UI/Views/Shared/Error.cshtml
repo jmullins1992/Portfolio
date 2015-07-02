@@ -1,0 +1,22 @@
+﻿
+
+@{
+    ViewBag.Title = "Error";
+}
+<div class="row">
+    <div class="col-xs-12 col-sm-8">
+        <h2 class="text-danger">An error occurred while processing your request.</h2>
+
+        @if (ViewBag.ErrorMsg != null)
+        {
+            <div class="panel panel-warning">
+                <div class="panel-heading">
+                    <h4 class="panel-title">More info:</h4>
+                </div>
+                <div class="panel-body">
+                    <p>@ViewBag.ErrorMsg</p>                   
+                </div>
+            </div>                                
+        }         
+    </div>
+</div>

@@ -1,0 +1,117 @@
+﻿/*body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}*/
+
+/* Set padding to keep content from hitting the edges */
+/*.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}*/
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+
+/* Site background image*/
+
+html, body {
+  height: 100%;
+}
+body {
+    background-image: url('Images/colored-pencils-bg3a.jpg');
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Navbar */
+.navbar {
+    margin-top: 7px;
+
+    -webkit-box-shadow: 0 6px 6px -6px black;
+     -moz-box-shadow: 0 6px 6px -6px black;
+          box-shadow: 0 6px 6px -6px black;
+}
+
+.navbar-brand img {
+    height: 30px;
+    margin-top: -7px;
+}
+
+.modal-backdrop {
+    bottom: 0;
+    position: fixed;
+}
+
+/* Panel shadows */
+
+.panel {
+        -webkit-box-shadow: 0 6px 6px -6px black;
+     -moz-box-shadow: 0 6px 6px -6px black;
+          box-shadow: 0 6px 6px -6px black;
+}
+
+/* Graded assignment card */
+
+.StudentGrade {
+    position: relative;
+    background-image: url('Images/notebook-bg.jpg');
+    background-size: 100%;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px lightgray;
+    margin: 10px;
+    padding: 5px;
+    width: 175px;
+    height: 175px;
+    -webkit-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+    -moz-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+    box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+}
+
+.StudentGrade h2 {
+    color: darkblue;
+    font-family: cursive;
+    margin-bottom: 30px;
+}
+
+.StudentGrade div {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Error image */
+
+.error-image {
+    /*argin-left: auto;
+    margin-right: auto;*/
+    align-self: center;
+    height: 150px;
+    width: 150px;
+}
+
+/* Gradebook page */
+.editCell {
+    display: none;
+}
+
+.editCell input {
+    width: 35px;
+}
+
+.notEditingCell {
+    width: 100%;
+    height: 100%;
+}
+
+/* Parent dashboard page*/
+.studentCourses {
+    display: none;
+}
+

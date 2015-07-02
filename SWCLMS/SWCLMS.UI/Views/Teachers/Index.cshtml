@@ -1,0 +1,89 @@
+﻿@model SWCLMS.Models.Responses.DataResponse<List<SWCLMS.Models.Queries.CourseFront>>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Teacher Dashboard</h2>
+
+
+<div class="row">
+    <div class="col-xs-12">
+        <h4>My Classes</h4>
+    </div>
+
+    <div class="col-xs-12 col-sm-8 col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <a href="@Url.Action("AddCourse", "Teachers")" class="btn btn-info">
+                            <span class="glyphicon glyphicon-plus"></span> Add New Course
+                        </a>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="pull-right">
+                            @if (Model.Data.Count > 0)
+                            {
+                                <a href="#" id="lnkCurrent">Current (@Model.Data.Count(c => c.IsArchived == false))</a>
+                                <span> | </span>                                
+                                <a href="#" id="lnkArchived">Archived (@Model.Data.Count(c => c.IsArchived))</a>
+                            }
+                            else
+                            {
+                                <h4 class="text-warning">You have no classes!</h4>
+                            }
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-xs-12">
+
+            </div>
+            <table class="table table-striped" id="currentClasses">
+                <tbody>
+                    @foreach (var c in Model.Data.Where(c => c.IsArchived == false))
+                    {
+                        <tr>
+                            <td>@Html.ActionLink(c.CourseName, "Gradebook", "Courses", new { id = c.CourseId }, null)</td>
+                            <td class="text-right">
+                                @c.NumOfStudents Students
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <table class="table table-striped" id="archivedClasses" style="display: none">
+                <tbody>
+                    @foreach (var c in Model.Data.Where(c => c.IsArchived == true))
+                    {
+                        <tr>
+                            <td>@Html.ActionLink(c.CourseName, "Information", "Courses", new { id = c.CourseId }, null)</td>
+                            <td class="text-right">
+                                    @c.NumOfStudents Students
+                                </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            $('#lnkArchived').click(function () {
+                $('#currentClasses').hide();
+                $('#archivedClasses').show();
+            });
+
+            $('#lnkCurrent').click(function () {
+                $('#archivedClasses').hide();
+                $('#currentClasses').show();
+            });
+        });
+    </script>
+}

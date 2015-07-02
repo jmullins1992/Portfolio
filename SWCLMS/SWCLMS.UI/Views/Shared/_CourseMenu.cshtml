@@ -1,0 +1,34 @@
+﻿@model SWCLMS.Models.Queries.CourseDetails
+
+<div class="row">
+    <div class="col-xs-12 col-sm-6">
+        @if (Model.IsArchived)
+        {
+            <h2>@Model.CourseName - @ViewBag.Title (Archived)</h2>
+        }
+        else
+        {
+            <h2>@Model.CourseName - @ViewBag.Title</h2>
+        }
+        
+    </div>
+    <div class="col-xs-12 col-sm-6">
+        <h4 class="text-right">
+            <small>
+                <em>
+                    Teacher - <strong>@Model.TeacherFirstName @Model.TeacherLastName</strong>
+                    <br />
+                    Grade - <strong>@Model.GradeLevelName</strong>
+                </em>
+            </small>
+        </h4>
+    </div>
+    <div class="col-xs-12">
+
+        @Html.ActionLink("Information", "Information", "Courses", new { id = Model.CourseId }, null) |
+        @Html.ActionLink("Roster", "Roster", "Courses", new { id = Model.CourseId }, null) |
+        @Html.ActionLink("Gradebook", "Gradebook", "Courses", new { id = Model.CourseId }, null)
+        <hr />
+    </div>
+
+</div>

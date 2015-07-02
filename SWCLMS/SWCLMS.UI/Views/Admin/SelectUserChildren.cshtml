@@ -1,0 +1,33 @@
+﻿@model SWCLMS.UI.Models.ParentChildChecklistVM
+
+@{
+    ViewBag.Title = "Select Children";
+}
+
+<div class="row">
+    <div class="col-xs-12 col-sm-8">
+        <h2>Select Children</h2>
+        @using (Html.BeginForm("UpdateChildren", "Admin", FormMethod.Post))
+        {
+            @Html.HiddenFor(m => m.ParentId)
+            for (var i = 0; i < Model.AllUsersSelectList.Count; i++)
+            {
+                @Html.CheckBoxFor(m => m.AllUsersSelectList[i].IsChecked)
+                <span>@Model.AllUsersSelectList[i].Name</span>
+                @Html.HiddenFor(m => m.AllUsersSelectList[i].Name)
+                @Html.HiddenFor(m => m.AllUsersSelectList[i].UserId)
+
+                <br />
+            }
+            <br/>
+            @Html.ActionLink("Cancel", "UserDetails", "Admin", new { id = Model.ParentId }, new { @class = "btn btn-default" })
+            <button class="btn btn-primary">Save</button>
+        }
+
+    </div>
+</div>
+
+
+
+
+

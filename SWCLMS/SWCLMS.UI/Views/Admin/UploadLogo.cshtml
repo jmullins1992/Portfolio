@@ -1,0 +1,19 @@
+﻿@model SWCLMS.UI.Models.LogoUploadVM
+@{
+    ViewBag.Title = "UploadLogo";
+}
+
+<h2>Upload the Logo</h2>
+<p>Upload an image of type png to represent the school district.</p>
+<h3>@ViewBag.Message</h3>
+
+@using (Html.BeginForm("UploadLogo", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="form-group">
+        <label>Upload File</label>
+        <input type="file" name="Logo" id="Logo" class="form-control"/>
+    </div>
+
+    <button>Submit</button>
+}
+

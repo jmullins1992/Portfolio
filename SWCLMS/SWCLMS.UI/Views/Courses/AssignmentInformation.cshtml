@@ -1,0 +1,62 @@
+﻿@model SWCLMS.UI.Models.AddAssignmentVM
+
+@{
+    ViewBag.Title = "Edit Assignment";
+}
+
+@Html.Partial("_CourseMenu", Model.CourseDetails)
+
+<div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        @using (Html.BeginForm())
+        {
+            @Html.ValidationSummary()
+            @Html.AntiForgeryToken()
+            @Html.HiddenFor(m => Model.CourseId)
+            @Html.HiddenFor(m => Model.AssignmentId)
+
+            <div class="form-group">
+                <label>Name</label>
+                @Html.TextBoxFor(m => Model.AssignmentName, null, new {@class = "form-control", placeholder = Model.AssignmentName})
+            </div>
+            <div class="form-group">
+                <label>Possible Points</label>
+                @Html.TextBoxFor(m => Model.PossiblePoints, null, new {@class = "form-control", placeholder = Model.PossiblePoints})
+            </div>
+            <div class="form-group">
+                <label>Due Date</label>
+                @Html.EditorFor(m => Model.DueDate, new {htmlattributes = new {@class = "form-control", placeholder = Model.DueDate}})
+            </div>
+            <div class="form-group">
+                <label>Description</label>
+                @Html.TextAreaFor(m => Model.AssignmentDescription, new {@class = "form-control", placeholder = Model.AssignmentDescription})
+            </div>
+            @Html.ActionLink("Cancel", "Gradebook", "Courses", new {id = @Model.CourseId}, new {@class = "btn btn-default"})
+            <button class="btn btn-primary" data-confirm="Are you sure? This will delete grade data">Save</button>
+
+
+        }
+
+        <br/>
+
+        @using (Html.BeginForm("DeleteAssignment", "Courses", new {id = @Model.CourseId, assignmentId = @Model.AssignmentId}))
+        {
+            @Html.AntiForgeryToken()
+            <button class="btn btn-danger" data-confirm="Are you sure?">Delete</button>
+        }
+
+    </div>
+</div>
+
+@section scripts
+{
+    <script>
+        $(document).ready(function () {
+            $('[data-confirm]').click(function (e) {
+                if (!confirm($(this).attr("data-confirm"))) {
+                    e.preventDefault();
+                }
+            });
+        });
+    </script>
+}

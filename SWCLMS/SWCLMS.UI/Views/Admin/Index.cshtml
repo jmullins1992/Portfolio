@@ -1,0 +1,54 @@
+﻿@model SWCLMS.UI.Models.AdminIndexVM
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Admin Dashboard</h2>
+
+<div class="row">
+    <div class="col-xs-12">
+        @Html.ActionLink("Search for Users", "Search", "Admin") |
+        @Html.ActionLink("Change Website Logo", "UploadLogo", "Admin")
+    </div>
+    <div class="col-xs-12">
+        <h4>Unassigned Users</h4>        
+        <div class="panel panel-default">
+            @if (Model.LmsUsers == null || Model.LmsUsers.Count == 0)
+            {
+                <div class="panel-body">
+                    <h4>No unassigned users to display.</h4>
+                </div>
+            }
+            else
+            {
+
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>Last Name</th>
+                        <th>First Name</th>
+                        <th>Email</th>
+                        <th>Suggested Role</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @foreach (var user in Model.LmsUsers)
+                    {
+                        <tr>
+                            <td>@user.LastName</td>
+                            <td>@user.FirstName</td>
+                            <td>@user.Email</td>
+                            <td>@user.SuggestedRole</td>
+                            <td>@Html.ActionLink("details", "UserDetails", "Admin", new {id = @user.UserId}, new {@class="btn btn-info"})</td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+            }
+        </div>
+
+    </div>
+</div>
+

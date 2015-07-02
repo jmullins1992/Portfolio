@@ -1,0 +1,65 @@
+﻿@model SWCLMS.UI.Models.CourseInfoVM
+@{
+    ViewBag.Title = "AddCourse";
+}
+
+<div class="row">
+    <div class="col-xs-12">
+        <h1>Add a New Course</h1>
+    </div>
+    <div class="col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.HiddenFor(m => m.CourseId)
+                    @Html.HiddenFor(m => m.TeacherId)
+                    @Html.ValidationSummary(null, new{@class = "text-danger"})
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label>Class Name</label>
+                                @Html.TextBoxFor(m => m.CourseName, null, new {@class = "form-control"})
+                            </div>
+                            <div class="form-group">
+                                <label>Subject</label>
+                                @Html.DropDownListFor(m => m.SubjectId, Model.SubjectList, new {@class = "form-control"})
+                            </div>
+                            <div class="form-group">
+                                <label>Start Date</label>
+                                @Html.EditorFor(m => m.StartDate, new {htmlattributes = new {@class = "form-control"}})
+                            </div>
+                            <div class="form-group">
+                                <label>End Date</label>
+                                @Html.EditorFor(m => m.EndDate, new {htmlattributes = new {@class = "form-control"}})
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <label>Grade Level</label>
+                                @Html.DropDownListFor(m => m.GradeLevelId, Model.GradeLevelList, new {@class = "form-control"})
+                            </div>
+                            @*<div class="checkbox">
+                                <label>
+                                    @Html.CheckBoxFor(m => m.IsArchived)
+                                    Archive
+                                </label>
+                            </div>*@
+                            <div class="form-group">
+                                <label>Course Description</label>
+                                @Html.TextAreaFor(m => m.CourseDescription, new {@class = "form-control"})
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <button class="btn btn-primary">Save</button>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

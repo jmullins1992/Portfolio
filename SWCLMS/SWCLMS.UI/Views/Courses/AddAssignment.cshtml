@@ -1,0 +1,39 @@
+﻿@model SWCLMS.UI.Models.AddAssignmentVM
+
+@{
+    ViewBag.Title = "Add Assignment";
+}
+
+@Html.Partial("_CourseMenu", Model.CourseDetails)
+
+<div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        @using (Html.BeginForm())
+        {
+            @Html.ValidationSummary()
+            @Html.AntiForgeryToken()
+            @Html.HiddenFor(m => Model.CourseId)
+            @Html.HiddenFor(m=>m.CourseDetails.EndDate)
+            @Html.HiddenFor(m=>m.CourseDetails.StartDate)
+
+            <div class="form-group">
+                <label>Name</label>
+                @Html.TextBoxFor(m => Model.AssignmentName, null, new { @class = "form-control", placeholder = "Enter a name for this assignment."})
+            </div>
+            <div class="form-group">
+                <label>Possible Points</label>
+                @Html.TextBoxFor(m => Model.PossiblePoints, null, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label>Due Date</label>
+                @Html.EditorFor(m => Model.DueDate, new { htmlattributes = new { @class = "form-control" } })
+            </div>
+            <div class="form-group">
+                <label>Description</label>
+                @Html.TextAreaFor(m => Model.AssignmentDescription, new { @class = "form-control", placeholder = "Enter an assignment description or instructions for your students." })
+            </div>
+            @Html.ActionLink("Cancel", "Gradebook", "Courses", new { id = @Model.CourseId }, new { @class = "btn btn-default" })
+            <button class="btn btn-primary">Save</button>
+        }
+    </div>
+</div>

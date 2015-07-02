@@ -1,0 +1,85 @@
+﻿@model SWCLMS.UI.Models.UserDetailsVM
+
+@{
+    ViewBag.Title = "User Details";
+}
+
+<h2>User Details</h2>
+
+<div class="row">
+    <div class="col-xs-12 col-sm-4">
+        @Html.ValidationSummary()
+        @using (Html.BeginForm())
+        {
+            @Html.HiddenFor(m => m.UserId)
+            <div class="form-group">
+                <label>Last Name</label>
+                @Html.TextBoxFor(m => m.LastName, null, new {@class = "form-control"})
+            </div>
+            <div class="form-group">
+                <label>First Name</label>
+                @Html.TextBoxFor(m => m.FirstName, null, new {@class = "form-control"})
+            </div>
+            <div class="form-group">
+                <label>Grade Level</label>
+                @Html.DropDownListFor(m => m.GradeLevelId, Model.GradeLevelList, "-- N/A --", new {@class = "form-control"})
+            </div>
+            <div class="form-group">
+                <label>User Name</label>
+                <p>@Model.UserName</p>
+                @Html.HiddenFor(m => m.UserName)
+            </div>
+            <div class="form-group">
+                <label>Suggested Role</label>
+                <p>@Model.SuggestedRole</p>
+                @Html.HiddenFor(m => m.SuggestedRole)
+            </div>
+
+
+            <div class="form-group">
+                <label>Roles</label>
+                <br/>
+                @for (var i = 0; i < Model.AllRoles.Count; i++)
+                {
+                    @Html.CheckBoxFor(m => m.AllRoles[i].IsChecked, new {id= "chk"+Model.AllRoles[i].RoleName})
+                    <span>@Model.AllRoles[i].RoleName</span>
+                    @Html.HiddenFor(m => m.AllRoles[i].RoleName)
+                    <br/>
+                }
+            </div>
+
+            if (Model.AllRoles.Single(a => a.RoleName == "Parent").IsChecked)
+            {
+                <div class="form-group" id="editChildren">
+                    <a href="@Url.Action("UpdateChildren", "Admin", new {id = Model.UserId})" class="btn btn-info">Edit Children</a>
+                </div>
+            }
+            else
+            {
+                <div class="form-group" id="editChildren" style="display: none">
+                    <a href="@Url.Action("UpdateChildren", "Admin", new {id = Model.UserId})" class="btn btn-info">Edit Children</a>
+                </div>
+            }
+
+            @Html.ActionLink("Cancel", "Index", "Admin", new{@class="btn btn-default"})
+            <button class="btn btn-primary">Save</button>
+        }
+    </div>
+</div>
+
+@section scripts
+{
+    <script>
+        $(document).ready(function() {
+            $('#chkParent').change(function() {
+                var isParent = $(this).prop('checked');
+                if (isParent) {
+                    $('#editChildren').fadeIn();
+                } else {
+                    $('#editChildren').fadeOut();
+
+                }
+            });
+        });
+    </script>
+}

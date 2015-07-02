@@ -1,0 +1,100 @@
+﻿@model SWCLMS.UI.Models.ParentDashboardVM
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Parent Dashboard</h2>
+<br/>
+<div class="row">
+    <div class="col-xs-12 col-sm-8">        
+        <div class="panel panel-default">
+            @if (Model.ChildList != null && Model.ChildList.Count > 0)
+            {
+                <ul class="list-group">
+                    @foreach (var st in Model.ChildList)
+                    {
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-xs-8">
+                                    <h4>
+                                        @st.Student.FirstName @st.Student.LastName
+                                    </h4>
+                                </div>
+                                <div class="col-xs-4">
+                                    <button class="btn btn-default btnViewClasses pull-right">Show Classes</button>
+                                </div>
+                                <div class="col-xs-12 studentCourses">
+                                    <br/>
+                                    @if (st.CoursesListItems == null || st.CoursesListItems.Count == 0)
+                                    {
+                                        <h4><em>This student is not yet enrolled in any courses.</em></h4>
+                                    }
+                                    else
+                                    {
+                                        <div class="panel panel-primary">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Course Name</th>
+                                                        <th>Grade</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    @foreach (var c in st.CoursesListItems)
+                                                    {
+                                                        <tr>
+                                                            <td>@c.CourseName</td>
+                                                            <td>@c.CurrentGrade</td>
+                                                            <td><button class="btn btn-info btnViewGrades pull-right" data-studentid="@st.Student.UserId" data-courseid="@c.CourseId">View Grades</button></td>
+                                                        </tr>
+                                                    }
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    }
+                                    
+                                </div>
+                            </div>
+                        </li>
+
+                    }
+                </ul>
+            }
+            else
+            {
+                <div class="panel-body">
+                    <h3>No students to display.</h3>
+                </div>
+            }
+
+        </div>
+
+    </div>
+</div>
+
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">View Assignments</h4>
+            </div>
+            <div class="modal-body" id="myModalBody">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts
+{
+    <script>
+        var apiPath = '@Url.Action("Grades", "Parents")'
+    </script>
+    <script src="~/Scripts/app/ParentDashboard.js"></script>
+}

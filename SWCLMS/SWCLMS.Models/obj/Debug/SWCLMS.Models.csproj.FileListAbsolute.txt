@@ -1,0 +1,10 @@
+C:\Users\Apprentice\Documents\GitHub\april2015-cohort-materials\Samples\SWCLMS\SWCLMS.Models\bin\Debug\SWCLMS.Models.dll
+C:\Users\Apprentice\Documents\GitHub\april2015-cohort-materials\Samples\SWCLMS\SWCLMS.Models\bin\Debug\SWCLMS.Models.pdb
+C:\Users\Apprentice\Documents\GitHub\april2015-cohort-materials\Samples\SWCLMS\SWCLMS.Models\obj\Debug\SWCLMS.Models.csprojResolveAssemblyReference.cache
+C:\Users\Apprentice\Documents\GitHub\april2015-cohort-materials\Samples\SWCLMS\SWCLMS.Models\obj\Debug\SWCLMS.Models.dll
+C:\Users\Apprentice\Documents\GitHub\april2015-cohort-materials\Samples\SWCLMS\SWCLMS.Models\obj\Debug\SWCLMS.Models.pdb
+C:\Github\EddieCampbell\GroupProjects\SWCLMS\SWCLMS.Models\bin\Debug\SWCLMS.Models.dll
+C:\Github\EddieCampbell\GroupProjects\SWCLMS\SWCLMS.Models\bin\Debug\SWCLMS.Models.pdb
+C:\Github\EddieCampbell\GroupProjects\SWCLMS\SWCLMS.Models\obj\Debug\SWCLMS.Models.csprojResolveAssemblyReference.cache
+C:\Github\EddieCampbell\GroupProjects\SWCLMS\SWCLMS.Models\obj\Debug\SWCLMS.Models.dll
+C:\Github\EddieCampbell\GroupProjects\SWCLMS\SWCLMS.Models\obj\Debug\SWCLMS.Models.pdb

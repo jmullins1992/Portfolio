@@ -1,0 +1,81 @@
+﻿@model SWCLMS.UI.Models.LoginRegistrationVM
+@{
+    ViewBag.Title = "Home Page";
+}
+<div class="row">
+    <div class="col-xs-12">
+        <h1>Learning Management System</h1>
+    </div>
+</div>
+
+<div class="row">
+    @Html.ValidationSummary(true, null, new { @class = "text-danger" })
+
+    
+    <div class="col-xs-12 col-sm-4">
+        <h3>Existing Users Log In Here</h3>
+        @using (Html.BeginForm("Login", "Account", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+            <div class="form-group">
+                <label>Email</label>
+                @Html.ValidationMessageFor(m => m.LoginViewModel.Email, null, new {@class = "text-danger"})
+                @Html.EditorFor(m => m.LoginViewModel.Email, new {htmlattributes = new {@class = "form-control"}})
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                @Html.ValidationMessageFor(m => m.LoginViewModel.Password, null, new {@class = "text-danger"})
+                @Html.EditorFor(m => m.LoginViewModel.Password, new {htmlattributes = new {@class = "form-control"}})
+            </div>
+            <div class="checkbox">
+                <label>
+                    @Html.CheckBoxFor(m => m.LoginViewModel.RememberMe)
+                    Remember me?
+                </label>
+            </div>
+            <button class="btn btn-primary">Log In</button>
+        }
+    </div>
+    <div class="col-xs-12 col-sm-4 col-sm-offset-2">
+        <h3>New User? Register now!</h3>
+        @using (Html.BeginForm("Register", "Account", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+            <div class="form-group">
+                <label>First Name</label>
+                @Html.ValidationMessageFor(m => m.RegisterViewModel.FirstName, null, new {@class = "text-danger"})
+                @Html.EditorFor(m => m.RegisterViewModel.FirstName, new {htmlattributes = new {@class = "form-control"}})
+            </div>
+            <div class="form-group">
+                <label>Last Name</label>
+                @Html.ValidationMessageFor(m => m.RegisterViewModel.LastName, null, new {@class = "text-danger"})
+                @Html.EditorFor(m => m.RegisterViewModel.LastName, new {htmlattributes = new {@class = "form-control"}})
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                @Html.ValidationMessageFor(m => m.RegisterViewModel.Email, null, new {@class = "text-danger"})
+                @Html.EditorFor(m => m.RegisterViewModel.Email, new {htmlattributes = new {@class = "form-control"}})
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                @Html.ValidationMessageFor(m => m.RegisterViewModel.Password, null, new {@class = "text-danger"})
+                @Html.PasswordFor(m => m.RegisterViewModel.Password, new {@class = "form-control"})
+            </div>
+            <div class="form-group">
+                <label>Confirm Password</label>
+                @Html.ValidationMessageFor(m => m.RegisterViewModel.ConfirmPassword, null, new {@class = "text-danger"})
+                @Html.PasswordFor(m => m.RegisterViewModel.ConfirmPassword, new {@class = "form-control"})
+
+            </div>
+            <div class="form-group">
+                <label>I am a...</label>
+                @Html.DropDownListFor(m => m.RegisterViewModel.SuggestedRole, Model.RegisterViewModel.Roles, new {@class = "form-control"})
+            </div>
+            <div class="form-group">
+                <label>Grade Level</label>
+                @Html.DropDownListFor(m => m.RegisterViewModel.GradeLevelId, Model.RegisterViewModel.GradeLevels, "N/A", new {@class = "form-control"})
+            </div>
+            <button class="btn btn-primary">Register</button>
+        }
+    </div>
+</div>

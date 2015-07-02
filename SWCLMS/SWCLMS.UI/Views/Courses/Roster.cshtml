@@ -1,0 +1,136 @@
+﻿@model SWCLMS.UI.Models.CourseRosterVM
+
+@{
+    ViewBag.Title = "Roster";
+}
+
+@Html.Partial("_CourseMenu", Model.CourseDetails)
+
+<div class="row">
+    <div class="col-xs-12 col-md-6">
+        <h3>Current Roster</h3>
+        <div class="panel panel-default">
+
+            @if (Model.RosterResponse.StudentsInCourse.Count > 0)
+            {
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                        <th></th>
+                    </tr>
+
+                    </thead>
+                    <tbody>
+                    @foreach (var student in Model.RosterResponse.StudentsInCourse)
+                    {
+                        <tr>
+                            <td>@student.FirstName</td>
+                            <td>@student.LastName</td>
+                            <td>@student.Email</td>
+                            <td>
+                                @using (Html.BeginForm("DeleteStudentFromCourse", "Courses", new {id = Model.CourseDetails.CourseId}))
+                                {
+                                    @Html.Hidden("studentId", student.UserId)
+                                    @Html.HiddenFor(m => m.SearchGradelevelId)
+                                    @Html.HiddenFor(m => m.SearchLastName)
+                                    if (!Model.CourseDetails.IsArchived)
+                                    {
+                                        <button class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></button>
+                                    }
+
+                                }
+                            </td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+            }
+            else
+            {
+                <div class="panel-body">
+                    <h4>No students enrolled yet.</h4>
+                </div>
+            }
+        </div>
+    </div>
+    @if (!Model.CourseDetails.IsArchived)
+    {
+        <div class="col-xs-12 col-md-6">
+            <h3>Add Student</h3>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    @using (Html.BeginForm("Roster", "Courses", FormMethod.Get))
+                    {
+                        <div class="row">
+                            <div class="col-xs-8">
+                                <div class="form-group">
+                                    <label>Last Name</label>
+                                    @Html.TextBoxFor(m => m.SearchLastName, null, new { @class = "form-control", placeholder = "Last Name" })
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="form-group">
+                                    <label>Grade Level</label>
+                                    @Html.DropDownListFor(m => m.SearchGradelevelId, Model.GradeLevelList, "--", new { @class = "form-control" })
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary">Find Students</button>
+                    }
+                </div>
+
+                @if (Model.SearchGradelevelId != null || !string.IsNullOrEmpty(Model.SearchLastName))
+                {
+                    if (Model.RosterResponse.StudentsNotInCourse.Count > 0)
+                    {
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Grade</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var student in Model.RosterResponse.StudentsNotInCourse)
+                                {
+                                    <tr>
+                                        <td>@student.FirstName</td>
+                                        <td>@student.LastName</td>
+                                        <td>@student.GradeLevelName</td>
+                                        <td>
+                                            @using (Html.BeginForm("AddStudentToCourse", "Courses", new { id = Model.CourseDetails.CourseId }))
+                                            {
+                                                @Html.Hidden("studentId", student.UserId)
+                                                @Html.HiddenFor(m => m.SearchGradelevelId)
+                                                @Html.HiddenFor(m => m.SearchLastName)
+                                                @Html.Hidden("studentId", student.UserId)
+
+                                                ;
+                                                <button class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span></button>
+                                            }
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+
+                    }
+                    else
+                    {
+                        <div class="panel-body">
+                            <h4>No results.</h4>
+                        </div>
+                    }
+                }
+            </div>
+
+        </div>
+    }
+    
+</div>
