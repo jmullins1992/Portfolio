@@ -138,7 +138,7 @@ CREATE TABLE RosterAssignment(
 )
 GO
 
-CREATE TABLE RosterAssignment
+ALTER TABLE RosterAssignment
 	ADD CONSTRAINT FK_RosterAssignment_Roster FOREIGN KEY (RosterId)
 		REFERENCES dbo.Roster(RosterId),
 	CONSTRAINT FK_RosterAssignment_Assignment FOREIGN KEY (AssignmentId)
