@@ -3,3 +3,8 @@
 ################################################################################
 
 *.suo
+/.vs
+*.cache
+/SWCLMS/.vs/SWCLMS/v16/Server/sqlite3/db.lock
+/SWCLMS/.vs/SWCLMS/v16/Server/sqlite3
+*.CopyComplete

@@ -8,3 +8,8 @@ C:\Github\EddieCampbell\GroupProjects\SWCLMS\SWCLMS.Models\bin\Debug\SWCLMS.Mode
 C:\Github\EddieCampbell\GroupProjects\SWCLMS\SWCLMS.Models\obj\Debug\SWCLMS.Models.csprojResolveAssemblyReference.cache
 C:\Github\EddieCampbell\GroupProjects\SWCLMS\SWCLMS.Models\obj\Debug\SWCLMS.Models.dll
 C:\Github\EddieCampbell\GroupProjects\SWCLMS\SWCLMS.Models\obj\Debug\SWCLMS.Models.pdb
+C:\Users\Jerry\source\repos\Portfolio\SWCLMS\SWCLMS.Models\bin\Debug\SWCLMS.Models.dll
+C:\Users\Jerry\source\repos\Portfolio\SWCLMS\SWCLMS.Models\bin\Debug\SWCLMS.Models.pdb
+C:\Users\Jerry\source\repos\Portfolio\SWCLMS\SWCLMS.Models\obj\Debug\SWCLMS.Models.csproj.CoreCompileInputs.cache
+C:\Users\Jerry\source\repos\Portfolio\SWCLMS\SWCLMS.Models\obj\Debug\SWCLMS.Models.dll
+C:\Users\Jerry\source\repos\Portfolio\SWCLMS\SWCLMS.Models\obj\Debug\SWCLMS.Models.pdb

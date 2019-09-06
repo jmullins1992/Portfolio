@@ -18,3 +18,15 @@ C:\Github\EddieCampbell\GroupProjects\SWCLMS\SWCLMS.Data\bin\Debug\Dapper.xml
 C:\Github\EddieCampbell\GroupProjects\SWCLMS\SWCLMS.Data\obj\Debug\SWCLMS.Data.csprojResolveAssemblyReference.cache
 C:\Github\EddieCampbell\GroupProjects\SWCLMS\SWCLMS.Data\obj\Debug\SWCLMS.Data.dll
 C:\Github\EddieCampbell\GroupProjects\SWCLMS\SWCLMS.Data\obj\Debug\SWCLMS.Data.pdb
+C:\Users\Jerry\source\repos\Portfolio\SWCLMS\SWCLMS.Data\bin\Debug\SWCLMS.Data.dll
+C:\Users\Jerry\source\repos\Portfolio\SWCLMS\SWCLMS.Data\bin\Debug\SWCLMS.Data.pdb
+C:\Users\Jerry\source\repos\Portfolio\SWCLMS\SWCLMS.Data\bin\Debug\Dapper.dll
+C:\Users\Jerry\source\repos\Portfolio\SWCLMS\SWCLMS.Data\bin\Debug\SWCLMS.Models.dll
+C:\Users\Jerry\source\repos\Portfolio\SWCLMS\SWCLMS.Data\bin\Debug\SWCLMS.Models.pdb
+C:\Users\Jerry\source\repos\Portfolio\SWCLMS\SWCLMS.Data\bin\Debug\Dapper.pdb
+C:\Users\Jerry\source\repos\Portfolio\SWCLMS\SWCLMS.Data\bin\Debug\Dapper.xml
+C:\Users\Jerry\source\repos\Portfolio\SWCLMS\SWCLMS.Data\obj\Debug\SWCLMS.Data.csprojAssemblyReference.cache
+C:\Users\Jerry\source\repos\Portfolio\SWCLMS\SWCLMS.Data\obj\Debug\SWCLMS.Data.csproj.CoreCompileInputs.cache
+C:\Users\Jerry\source\repos\Portfolio\SWCLMS\SWCLMS.Data\obj\Debug\SWCLMS.Data.csproj.CopyComplete
+C:\Users\Jerry\source\repos\Portfolio\SWCLMS\SWCLMS.Data\obj\Debug\SWCLMS.Data.dll
+C:\Users\Jerry\source\repos\Portfolio\SWCLMS\SWCLMS.Data\obj\Debug\SWCLMS.Data.pdb
