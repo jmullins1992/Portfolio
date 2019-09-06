@@ -11,7 +11,6 @@ namespace SWCLMS.Models.Interfaces
 {
     public interface IAssignmentRepository
     {
-
         List<GradedAssignment> GetGradedAssignments(int rosterId);
         List<GradedAssignment> GetGradedAssignments(int courseId, int studentId);
         void AddAssignment(Assignment newAssignment);
